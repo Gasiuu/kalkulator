@@ -1,0 +1,51 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double a, b, w;
+    int d;
+
+    cout << "Kalkulator wykonuje dzialania" << endl;
+
+    cout << "Dodawanie - 1" << endl;
+    cout << "Odejmowanie - 2" << endl;
+    cout << "Mnozenie - 3" << endl;
+    cout << "Dzielenie - 4" << endl;
+
+    cout << "Wpisz dzialanie: ";
+    cin >> d;
+    cout << endl;
+    cout << "Podaj 2 liczby oddzielajac je spacja: ";
+    cin >> a >> b;
+
+    if (d==1)
+   {
+     w=a+b;
+     cout << a << "+" << b << "=" << w;
+   }
+   if (d==2)
+    {
+     w=a-b;
+     cout << a << "-"<< b << "=" << w;
+   }
+   if (d==3)
+   {
+     w=a*b;
+     cout << a << "*" << b << "=" << w;
+   }
+   if (d==4)
+   {
+     w=a/b;
+     cout << a << "/" << b << "=" << w;
+   }
+   else
+    cout << "Nie mozna dzielic przez 0";
+
+
+
+
+
+    return 0;
+}
